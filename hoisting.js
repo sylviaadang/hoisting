@@ -76,3 +76,57 @@ mean = function () {
 }
 
 console.log(food) // logs fish
+
+// 6.
+console.log(genre);
+var genre = "disco";
+rewind();
+function rewind() {
+    genre = "rock";
+    console.log(genre);
+    var genre = "r&b";
+    console.log(genre);
+}
+console.log(genre);
+
+
+// prediction
+var genre;
+function rewind() {
+    var genre;
+    genre = 'rock';
+    console.log(genre) // logs rock
+    genre = 'r&b';
+    console.log(genre) // logs r&b
+}
+console.log(genre) //undefined
+genre = 'disco';
+rewind()
+console.log(genre) // logs r&b
+
+
+// 7.
+dojo = "san jose";
+console.log(dojo);
+learn();
+function learn() {
+    dojo = "seattle";
+    console.log(dojo);
+    var dojo = "burbank";
+    console.log(dojo);
+}
+console.log(dojo);
+
+// prediction
+function learn() {
+    var dojo;
+    dojo = 'seattle';
+    console.log(dojo) // logs seattle
+    dojo = 'burbank';
+    consolelog(dojo) // logs burbank
+}
+dojo = 'san jose';
+console.log(dojo) // logs san jose
+
+learn();
+console.log(dojo) // logs burbank
